@@ -45,7 +45,10 @@
 			
 			/* Rules for Text Examples */
 			#text p { text-align: center; } /* make all text in the paragraphs center aligned */
-			* { } /* make odd paragraphs bold with a font of "helvetica" */
+			tr:nth-child(odd) {
+				font-weight: bold;
+				font-family: helvetica;
+				}/* make odd paragraphs bold with a font of "helvetica" */
 			* { } /* make even paragraphs use font "courier" */
 			* { } /* ID textEx1 should have font size of 1.5 em */
 			* { } /* ID textEx2 should have font size of 1.4 em */
