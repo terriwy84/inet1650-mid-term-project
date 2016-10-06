@@ -45,19 +45,16 @@
 			
 			/* Rules for Text Examples */
 			#text p { text-align: center; } /* make all text in the paragraphs center aligned */
-			tr:nth-child(odd) {
-				font-weight: bold;
-				font-family: helvetica;
-				}/* make odd paragraphs bold with a font of "helvetica" */
-			* { } /* make even paragraphs use font "courier" */
-			* { } /* ID textEx1 should have font size of 1.5 em */
-			* { } /* ID textEx2 should have font size of 1.4 em */
+			p:nth-child(2n) { font-weight: bold; font-family: helvetica; }/* make odd paragraphs bold with a font of "helvetica" */
+			p:nth-child(2n+1) { font-family: courier; } /* make even paragraphs use font "courier" */
+			#textEx1 { font-size: 1.5em; } /* ID textEx1 should have font size of 1.5 em */
+			#textEx2 { font-size: 1.4em; }/* ID textEx2 should have font size of 1.4 em */
 			#textEx3 { font-size: 1.3em; } /* ID textEx3 should have font size of 1.3 em */
-			* { } /* ID textEx4 should have font size of 1.2 em */
-			* { } /* ID textEx5 should have font size of 1.1 em */
-			* { } /* ID textEx6 should have font size of 1.0 em */
-			* { } /* ID textEx7 should have font size of 0.9 em */
-			* { } /* ID textEx8 should have font size of 0.8em and line height of 3em; */
+			#textEx4 { font-size: 1.2em; } /* ID textEx4 should have font size of 1.2 em */
+			#textEx5 { font-size: 1.1em; } /* ID textEx5 should have font size of 1.1 em */
+			#textEx6 { font-size: 1.0em; } /* ID textEx6 should have font size of 1.0 em */
+			#textEx7 { font-size: 0.9em; } /* ID textEx7 should have font size of 0.9 em */
+			#textEx8 { font-size: 0.8em; line-height: 3em; } /* ID textEx8 should have font size of 0.8em and line height of 3em; */
 			
 			/* Rules for List Examples */
 			* { } /* first list should have squares for bullets */
