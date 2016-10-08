@@ -66,18 +66,20 @@
 		     /* first list should have a font size of 12px */
 			.title { font-size: 1.0000em; color: #ff0000; } /* The titles of songs should be 16px in size and have a color of #ff0000 */
 			.year { font-size: 1.56em; font-weight: bold; font-family: helvetica; color: #0000ff; } /* The year should be bold, 25px in size, use helvetica and have a color of #0000ff */
-			#list ol.list2 { list-style-type: upper-roman; } /* list 2 should use upper-roman for bullets */
+			 ol {
+				list-style: upper-roman;
+				} /* list 2 should use upper-roman for bullets */
 			#list ol.list2 li.odd { color: red; text-transform: uppercase } /* list 2 odd items should be red and uppercase */
 			#list ol.list2 li.even { color: green; }/* list 2 even items should be green */
 			#list ol.list2 li.even .city { font-size: 1.5em; } /* city in list 2 in even rows should have a font size of 1.5em */
 			#list ol.list2 li.even .state { font-size: 1.3em; } /* state in list 2 in even rows should have a font size of 1.3em */
-			#info .all-items { font-size: 2.0em; font-weight: bold; }/* populate in all items should be 2.0em in size and bold */
-			ul{
+			.pop { font-size: 2.0em; font-weight: bold; }/* populate in all items should be 2.0em in size and bold */
+			{
 				list-style: decimal-leading-zero;
 				} /* list 3 bullets should be decimals with leading zeros */
 			.line1 { text-decoration: line-through; }/* list 3 first list item should have a line-through the text */
 			#list3 .last-child { text-decoration: line-through; } /* list 3 last child should have a line-through the text */
-			#listsEx12 { text-decoration: line-through; } /* 12th item in lest 3 should  have a line-through the text */
+			#list ol.list3 .item12 { text-decoration: line-through; } /* 12th item in lest 3 should  have a line-through the text */
 			
 			/* Rules for Background Examples */
 			* { } /* all blocks should underline the text in them */
