@@ -110,16 +110,23 @@
 			#gradient blockquote.quote10 { background-image: linear-gradient(to bottom, green, green); color: white } /* background green font color #fff */
 					
 			/* Rules for Pseudo Element and Class Selector Examples */
-			* { } /* first level of bullets in table of contents should be upper-roman */
-			* { } /* second level of bullets in table of contents  should be decimal */
-			* { } /* third level of bullets in table of contents  should be lower alpha */
+		    li { list-style: upper-roman; } /* first level of bullets in table of contents should be upper-roman */
+			li li{ list-style: decimal; } /* second level of bullets in table of contents  should be decimal */
+			li li li { list-style: lower-alpha } /* third level of bullets in table of contents  should be lower alpha */
 	
-			* { } /* first level of items in table of contents  text should have a text shadow of read that is offset to the right and down by 1px */
-			* { } /* no shadow on rest of items in table of contents */
-			* { } /* first item in each third level should be bold */
-			* { } /* second item in each third level shold be the color blue */
+			li { text-shadow: 0.1em 0.1em red; } /* first level of items in table of contents  text should have a text shadow of read that is offset to the right and down by 1px */
+			li li { text-shadow: none;  } /* no shadow on rest of items in table of contents */
+			list > li > a { font-weight: bold; } /* first item in each third level should be bold */
+			list > li > b { color: blue; } /* second item in each third level shold be the color blue */
 			
-			* { } /* all text in under class receipt should be size 14px use font "monospace" and have the color lime */
+			div.recipe
+			{
+				font-size: 14px;
+				font-family: monospace;
+				color: #00FF00;
+				text-shadow: none;
+				
+			} /* all text in under class receipt should be size 14px use font "monospace" and have the color lime */
 			
 			/* END HERE: The end of your rules */
 			
