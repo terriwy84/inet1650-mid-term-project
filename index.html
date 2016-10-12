@@ -110,22 +110,18 @@
 			#gradient blockquote.quote10 { background-image: linear-gradient(to bottom, green, green); color: white } /* background green font color #fff */
 					
 			/* Rules for Pseudo Element and Class Selector Examples */
-		    #pseudo.li { list-style: upper-roman; } /* first level of bullets in table of contents should be upper-roman */
+		    #pseudo li { list-style: upper-roman; } /* first level of bullets in table of contents should be upper-roman */
 			#pseudo li li{ list-style: decimal; } /* second level of bullets in table of contents  should be decimal */
 			#pseudo li li li { list-style: lower-alpha } /* third level of bullets in table of contents  should be lower alpha */
-	
 			#pseudo li { text-shadow: 0.1em 0.1em red; } /* first level of items in table of contents  text should have a text shadow of read that is offset to the right and down by 1px */
 			#pseudo li li { text-shadow: none;  } /* no shadow on rest of items in table of contents */
-			#pseudo list > li > a { font-weight: bold; } /* first item in each third level should be bold */
-			#pseudo list > li > b { color: blue; } /* second item in each third level shold be the color blue */
+			#pseudo ol.a { font-weight: bold; } /* first item in each third level should be bold */
+			#pseudo ol.b { color: blue; } /* second item in each third level shold be the color blue */
 			
-			div.recipe
-			{
+			.recipe {
 				font-size: 14px;
 				font-family: monospace;
 				color: #00FF00;
-				text-shadow: none;
-				
 			} /* all text in under class receipt should be size 14px use font "monospace" and have the color lime */
 			
 			/* END HERE: The end of your rules */
